@@ -1,0 +1,211 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY STYLES */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.app-header h1 {
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.app-header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.app-header nav a:hover {
+  color: #ffeb3b;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+
+/* APP BODY */
+.app-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 30px;
+  gap: 20px;
+  flex-wrap: wrap; /* Responsive */
+}
+
+/* IMAGE CONTAINER */
+.image-container img {
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* DOWNLOAD CONTAINER */
+.download-container {
+  text-align: center;
+  max-width: 400px;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.download-container h2 {
+  font-size: 28px;
+  color: #2575fc;
+  margin-bottom: 10px;
+}
+
+.download-container p {
+  margin: 10px 0 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 12px 25px;
+  color: white;
+  background: #2575fc;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+  background-color: #1b63d8;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* QR CODE */
+.qr-code {
+  margin-top: 20px;
+}
+
+.qr-code img {
+  max-width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.qr-code img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+.qr-code p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* FEATURES SECTION */
+/* Features Container */
+.features-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+  text-align: center;
+  background-color: #f9fbfd;
+  border-radius: 10px;
+}
+
+/* Title */
+.features-container h2 {
+  font-size: 28px;
+  color: #2575fc;
+  margin-bottom: 20px;
+}
+
+/* Feature Item */
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa nội dung trong slide */
+  text-align: center;
+  padding: 10px;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+.feature-image:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-info {
+  margin-top: 10px;
+}
+
+.feature-info h3 {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.feature-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Slick Dots */
+.slick-dots {
+  bottom: -25px;
+}
+
+.slick-dots li button:before {
+  color: #007bff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #2575fc;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #007bff;
+}
